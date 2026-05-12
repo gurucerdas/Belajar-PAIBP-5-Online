@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PAIBP Kelas 5</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#eef5ff;
+}
+
+/* HEADER */
+
+.header{
+background:linear-gradient(135deg,#4facfe,#00c6ff);
+padding:30px 20px;
+border-bottom-left-radius:30px;
+border-bottom-right-radius:30px;
+text-align:center;
+color:white;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header h1{
+font-size:40px;
+margin-top:10px;
+}
+
+.header p{
+margin-top:10px;
+font-size:18px;
+}
+
+/* MENU */
+
+.menu{
+padding:20px;
+}
+
+.card{
+background:white;
+border-radius:25px;
+padding:18px;
+margin-bottom:18px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.02);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:70px;
+height:70px;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+color:white;
+}
+
+.b6{background:#6cc551;}
+.b7{background:#9b59ff;}
+.b8{background:#00bcd4;}
+.b9{background:#ff9800;}
+.b10{background:#ff5ca8;}
+
+.text h2{
+font-size:28px;
+margin-bottom:5px;
+}
+
+.text p{
+color:#666;
+font-size:15px;
+}
+
+/* BUTTON */
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:10px;
+}
+
+.btn{
+padding:10px 14px;
+border:none;
+border-radius:12px;
+color:white;
+font-size:14px;
+cursor:pointer;
+text-decoration:none;
+display:inline-block;
+}
+
+.btn1{background:#4caf50;}
+.btn2{background:#2196f3;}
+.btn3{background:#f44336;}
+.btn4{background:#ff9800;}
+
+.footer{
+text-align:center;
+padding:25px;
+font-size:20px;
+font-weight:bold;
+color:#444;
+}
+
+@media(max-width:700px){
+
+.card{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.buttons{
+margin-top:15px;
+}
+
+.text h2{
+font-size:24px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>📚 PAIBP Kelas 5</h1>
+
+<p>Belajar Menyenangkan • Ceria • Interaktif</p>
+
+</div>
+
+<div class="menu">
+
+<!-- BAB 6 -->
+
+<div class="card">
+
+<div class="left">
+
+<div class="icon b6">
+<i class="fa-solid fa-book-quran"></i>
+</div>
+
+<div class="text">
+<h2>Bab 6</h2>
+<p>Belajar Al-Qur'an</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="btn btn1"
+onclick="tampilRingkasan()">
+📖 Ringkasan Materi
+</button>
+
+<div id="ringkasan"
+style="
+display:none;
+margin-top:15px;
+background:white;
+padding:20px;
+border-radius:15px;
+line-height:1.8;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+max-width:900px;
+">
+
+<h2>📚 Rangkuman Materi</h2>
+
+<p>
+Surah al-Baqarah artinya sapi betina. Surah ini berada pada urutan ke-2 setelah surah al-Fatihah. Surah ini tergolong Madaniyah yang menjelaskan tentang pokok keimanan, bukti-bukti kebesaran Allah, sifat-sifat manusia, perintah dan larangan Allah serta janji dan ancaman Allah.
+</p>
+
+<p>
+Surah Ali Imran artinya keluarga Imran. Surah ini berada pada urutan ke-3 dalam Al-Qur’an, jumlah ayat ada 200 dan tergolong Madaniyah. Surah Ali Imran berisi pesan pokok tentang keimanan kepada Allah Swt., bukti-bukti kebenaran dan kekuasaan Allah, janji dan ancaman, juga kisah para teladan.
+</p>
+
+<h3>✨ Pesan Pokok Surah Ali Imran/3:64</h3>
+
+<p>
+a. Persamaan (kalimatun sawā) mencari titik temu dengan berdialog dan kerja sama dalam membangun cita-cita, agama dan bangsa;
+</p>
+
+<p>
+b. Bersifat terbuka (lunak) terhadap keyakinan yang berbeda;
+</p>
+
+<p>
+c. Menjauhi perbuatan musyrik.
+</p>
+
+<h3>🌸 Nilai Sikap</h3>
+
+<p>a. Toleransi</p>
+<p>b. Teguh pendirian terhadap keyakinan</p>
+
+<br>
+
+<button class="btn btn3"
+onclick="tutupRingkasan()">
+❌ Tutup Ringkasan
+</button>
+
+</div>
+
+<button class="btn btn2"
+onclick="lihatPDF('bab6.pdf')">
+📄 Materi
+</button>
+
+<a href="https://www.youtube.com/watch?v=eckJJjTDpT0"
+target="_blank"
+class="btn btn3">
+🎥 YouTube
+</a>
+
+<button class="btn btn4"
+onclick="tampilLatihan()">
+📝 Latihan
+</button>
+
+<!-- LATIHAN BAB 6 --> <div id="latihan6" style=" display:none; margin-top:15px; background:white; padding:20px; border-radius:15px; line-height:1.8; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:900px; "> <h2>📝 Latihan Bab 6</h2> <form id="quizForm"> <!-- SOAL 1 --> <p> <b>1. Potongan ayat yang termasuk Q.S. Ali-Imrān/3:64 adalah ....</b> </p> <p> 1. فَمَنْ يَكْفُرْ بِالطَّاغُوتِ <br> 2. قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ <br> 3. أَلَّا نَعْبُدَ إِلَّا اللّٰهَ وَلَا نُشْرِكَ بِهٖ شَيْئًا <br> 4. فَاِنْ تَوَلَّوْا فَقُولُوا اشْهَدُوا بِاَنَّا مُسْلِمُوْنَ </p> <label><input type="radio" name="q1" value="a"> A. 1 dan 2</label><br> <label><input type="radio" name="q1" value="b"> B. 1 dan 3</label><br> <label><input type="radio" name="q1" value="c"> C. 2 dan 3</label><br> <label><input type="radio" name="q1" value="d"> D. 3 dan 4</label> <br><br> <!-- SOAL 2 --> <p> <b>2. Lanjutan ayat tersebut adalah ....</b> </p> <p style="font-size:22px;"> قُلْ يٰٓاَهْلَ الْكِتٰبِ تَعَالَوْا اِلٰى كَلِمَةٍ سَوَاۤءٍ .... </p> <label><input type="radio" name="q2" value="a"> A. بَيْنَنَا وَبَيْنَكُمْ</label><br> <label><input type="radio" name="q2" value="b"> B. أَلَّا نَعْبُدَ إِلَّا اللّٰهَ</label><br> <label><input type="radio" name="q2" value="c"> C. وَلَا نُشْرِكَ بِهٖ شَيْئًا</label><br> <label><input type="radio" name="q2" value="d"> D. وَلَا يَتَّخِذَ بَعْضُنَا بَعْضًا</label> <br><br> <!-- SOAL 3 --> <p> <b>3. Pernyataan yang sesuai dengan isi pokok kalimatun sawā' adalah ....</b> </p> <label><input type="radio" name="q3" value="a"> A. Menerima orang lain sebagai anggota keluarga baru</label><br> <label><input type="radio" name="q3" value="b"> B. Bermusyawarah untuk mengadakan pemilihan ketua kelas</label><br> <label><input type="radio" name="q3" value="c"> C. Meyakini bahwa Allah menciptakan manusia dengan berbeda-beda</label><br> <label><input type="radio" name="q3" value="d"> D. Dialog dengan penganut kepercayaan lain untuk membangun bangsa</label> <br><br> <!-- SOAL 4 --> <p> <b>4. Pernyataan tersebut sesuai dengan pokok ayat yang berbunyi ....</b> </p> <label><input type="radio" name="q4" value="a"> A. بِالْعُرْوَةِ الْوُثْقٰى</label><br> <label><input type="radio" name="q4" value="b"> B. وَاللّٰهُ سَمِيْعٌ عَلِيْمٌ</label><br> <label><input type="radio" name="q4" value="c"> C. لَآ اِكْرَاهَ فِى الدِّيْنِ</label><br> <label><input type="radio" name="q4" value="d"> D. قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ</label> <br><br> <!-- SOAL 5 --> <p> <b>5. Hukum bacaan yang tepat pada potongan ayat di atas adalah ....</b> </p> <p style="font-size:22px;"> فَمَنْ يَكْفُرْ بِالطَّاغُوتِ </p> <label><input type="radio" name="q5" value="a"> A. Iqlab dan mat tabi'i</label><br> <label><input type="radio" name="q5" value="b"> B. Ikhfa dan al-Syamsiyah</label><br> <label><input type="radio" name="q5" value="c"> C. Idgam bigunnah dan al-Syamsiyah</label><br> <label><input type="radio" name="q5" value="d"> D. Idgam bigunnah dan al-Qamariyah</label> <br><br> <!-- SOAL 6 --> <p> <b>6. Perilaku terpuji yang sesuai dengan potongan ayat tersebut adalah ....</b> </p> <p style="font-size:22px;"> وَلَا نُشْرِكَ بِهٖ شَيْئًا </p> <label><input type="radio" name="q6" value="a"> A. Mengajak teman untuk belajar bersama di rumah</label><br> <label><input type="radio" name="q6" value="b"> B. Salat dengan penuh keyakinan dan khusyuk semata karena Allah</label><br> <label><input type="radio" name="q6" value="c"> C. Pada hari libur selalu menyempatkan untuk membantu orang tua</label><br> <label><input type="radio" name="q6" value="d"> D. Membantu korban bencana alam yang terjadi di wilayah Indonesia</label> <br><br> <!-- SOAL 7 --> <p> <b>7. Potongan ayat Al-Qur'an yang sesuai dengan deskripsi di atas adalah ....</b> </p> <label><input type="radio" name="q7" value="a"> A. كَلِمَةٍ سَوَاۤءٍ</label><br> <label><input type="radio" name="q7" value="b"> B. لَآ اِكْرَاهَ فِى الدِّيْنِ</label><br> <label><input type="radio" name="q7" value="c"> C. وَاللّٰهُ سَمِيْعٌ عَلِيْمٌ</label><br> <label><input type="radio" name="q7" value="d"> D. وَلَا يَتَّخِذَ بَعْضُنَا بَعْضًا</label> <br><br> <!-- SOAL 8 --> <p> <b>8. Pasangan yang tepat antara terjemah dengan ayat pada tabel tersebut adalah ....</b> </p> <label><input type="radio" name="q8" value="a"> A. 1c, 2a, 3d, dan 4b</label><br> <label><input type="radio" name="q8" value="b"> B. 1c, 2d, 3a, dan 4b</label><br> <label><input type="radio" name="q8" value="c"> C. 1c, 2a, 3b, dan 4b</label><br> <label><input type="radio" name="q8" value="d"> D. 1c, 2d, 3c, dan 4a</label> <br><br> <!-- SOAL 9 --> <p> <b>9. Kalimat yang bergaris bawah memiliki arti ....</b> </p> <p style="font-size:22px;"> لَآ اِكْرَاهَ فِى الدِّيْنِ ۗ <u>قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ</u> </p> <label><input type="radio" name="q9" value="a"> A. dalam agama</label><br> <label><input type="radio" name="q9" value="b"> B. jalan yang benar</label><br> <label><input type="radio" name="q9" value="c"> C. tidak ada paksaan</label><br> <label><input type="radio" name="q9" value="d"> D. sungguh telah jelas</label> <br><br> <!-- SOAL 10 --> <p> <b>10. Sikap yang tepat jika melihat kasus pertikaian adalah ....</b> </p> <label><input type="radio" name="q10" value="a"> A. segera mendengar berita melalui media TV</label><br> <label><input type="radio" name="q10" value="b"> B. berusaha mencari solusi dengan mendamaikan</label><br> <label><input type="radio" name="q10" value="c"> C. melaporkan kejadian kepada orang tua di rumah</label><br> <label><input type="radio" name="q10" value="d"> D. merekam kejadian tersebut untuk ditonton kembali</label> <br><br> <button type="button" class="btn btn1" onclick="cekNilai()"> ✅ Lihat Nilai </button> <button type="button" class="btn btn4" onclick="ulangiLatihan()"> 🔄 Ulangi Latihan </button> <button type="button" class="btn btn3" onclick="tutupLatihan()"> ❌ Tutup </button> </form> <h3 id="hasilNilai" style="margin-top:20px; color:#2196f3;"> </h3> </div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdo5bjPTxV3oWldkXDbSLejyDIJ0OLK4WKUj8S57SYvKOSOXA/viewform?usp=header"
+target="_blank"
+class="btn btn2">
+📋 Ulangan
+</a>
+
+</div>
+
+</div>
+
+<!-- BAB 7 -->
+
+<div class="card">
+
+<div class="left">
+
+<div class="icon b7">
+<i class="fa-solid fa-lightbulb"></i>
+</div>
+
+<div class="text">
+<h2>Bab 7</h2>
+<p>Hari Akhir</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="btn btn1"
+onclick="tampilRingkasan7()">
+📖 Ringkasan Materi
+</button>
+
+<div id="ringkasan7"
+style="
+display:none;
+margin-top:15px;
+background:white;
+padding:20px;
+border-radius:15px;
+line-height:1.8;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+max-width:900px;
+">
+
+<h2>📚 Rangkuman Materi</h2>
+
+<p>
+Hari akhir atau hari kiamat adalah hari berakhirnya kehidupan makhluk di dunia.
+Beriman kepada hari akhir adalah mempercayai dan meyakini sepenuh hati akan datangnya hari akhir atau hari kiamat.
+</p>
+
+<p>
+Beriman kepada hari akhir juga berarti meyakini setiap peristiwa yang akan terjadi setelah kematian.
+Kiamat terbagi menjadi dua, yaitu kiamat sugra dan kiamat kubra.
+</p>
+
+<h3>✨ Macam-Macam Kiamat</h3>
+
+<p>
+<b>a. Kiamat Sugra</b> adalah kiamat kecil, yaitu berakhirnya kehidupan seseorang atau sebagian makhluk hidup.
+Contohnya manusia meninggal dunia, banjir, gempa bumi, dan gunung meletus.
+</p>
+
+<p>
+<b>b. Kiamat Kubra</b> adalah kiamat besar, yaitu hancurnya seluruh alam semesta beserta isinya sehingga tidak ada lagi makhluk hidup yang tersisa.
+</p>
+
+<h3>🌈 Tahapan Kehidupan di Akhirat</h3>
+
+<p>
+Ada beberapa tahapan di akhirat yang akan dilalui manusia untuk menerima balasan amalnya:
+</p>
+
+<p><b>a. Yaumulba’as</b> yaitu hari kebangkitan.</p>
+
+<p><b>b. Yaumulmahsyar</b> yaitu hari berkumpul.</p>
+
+<p><b>c. Yaumulhisab</b> yaitu hari perhitungan amal.</p>
+
+<p><b>d. Yaumulmizan</b> yaitu hari penimbangan amal.</p>
+
+<p><b>e. Yaumuljaza</b> yaitu hari pembalasan.</p>
+
+<h3>🤲 Kalimat Tarji'</h3>
+
+<p>
+Ketika mendengar kabar kematian kita mengucapkan:
+</p>
+
+<p style="font-size:22px; text-align:center;">
+إِنَّا لِلّهِ وَإِنَّـا إِلَيْهِ رَاجِعونَ
+</p>
+
+<p style="text-align:center;">
+“Innalillahi wa inna ilaihi raji’un”
+</p>
+
+<h3>🌸 Hikmah Beriman kepada Hari Akhir</h3>
+
+<p>
+a. Memotivasi manusia untuk taat kepada Allah Swt.</p>
+
+<p>
+b. Membiasakan diri berbuat baik dan jujur.</p>
+
+<p>
+c. Membuat manusia berhati-hati dalam bertindak.</p>
+
+<p>
+d. Menyadarkan bahwa semua perbuatan akan dipertanggungjawabkan.</p>
+
+<br>
+
+<button class="btn btn3"
+onclick="tutupRingkasan7()">
+❌ Tutup Ringkasan
+</button>
+
+</div>
+
+<button class="btn btn2"
+onclick="lihatPDF('bab7.pdf')">
+📄 Materi
+</button>
+
+<a href="https://www.youtube.com/watch?v=Q4vdsq70MOM"
+target="_blank"
+class="btn btn3">
+🎥 YouTube
+</a>
+
+<button class="btn btn4" onclick="tampilLatihan7()"> 📝 Latihan </button> <!-- TOMBOL ULANGAN BAB 7 --> <a href="https://docs.google.com/forms/d/e/1FAIpQLScxhGpJQiNTNDxEboQX9cCwWi0ThDOSSdSA0paKQcce-zMU_g/viewform?usp=publish-editor" target="_blank" class="btn btn2"> 📋 Ulangan </a> <!-- LATIHAN BAB 7 --> <div id="latihan7" style=" display:none; margin-top:15px; background:white; padding:20px; border-radius:15px; line-height:1.8; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:900px; "> <h2>📝 Latihan Bab 7</h2> <form id="quizForm7"> <!-- SOAL 1 --> <p><b>1. Orang yang mengingkari adanya hari akhir termasuk golongan orang ....</b></p> <label><input type="radio" name="q1" value="a"> A. musyrik</label><br> <label><input type="radio" name="q1" value="b"> B. kafir</label><br> <label><input type="radio" name="q1" value="c"> C. munafik</label><br> <label><input type="radio" name="q1" value="d"> D. murtad</label> <br><br> <!-- SOAL 2 --> <p><b>2. Terjadinya kehancuran akibat bencana alam disebut....</b></p> <label><input type="radio" name="q2" value="a"> A. kiamat kubra</label><br> <label><input type="radio" name="q2" value="b"> B. kiamat sugra</label><br> <label><input type="radio" name="q2" value="c"> C. yaumul ba'as</label><br> <label><input type="radio" name="q2" value="d"> D. yaumulhisab</label> <br><br> <!-- SOAL 3 --> <p><b>3. Peristiwa kiamat dijelaskan Allah dalam surah....</b></p> <label><input type="radio" name="q3" value="a"> A. al-Qadr</label><br> <label><input type="radio" name="q3" value="b"> B. al-Fil</label><br> <label><input type="radio" name="q3" value="c"> C. al-Zalzalah</label><br> <label><input type="radio" name="q3" value="d"> D. al-Qari'ah</label> <br><br> <!-- SOAL 4 --> <p><b>4. Dikumpulkannya seluruh makhluk disebut....</b></p> <label><input type="radio" name="q4" value="a"> A. Yaumulmizan</label><br> <label><input type="radio" name="q4" value="b"> B. Yaumulhisab</label><br> <label><input type="radio" name="q4" value="c"> C. yaumul Ba'as</label><br> <label><input type="radio" name="q4" value="d"> D. yaumul mahsyar</label> <br><br> <!-- SOAL 5 --> <p><b>5. Hikmah beriman kepada hari akhir adalah....</b></p> <p> 1. Berusaha secara maksimal untuk hasil yang besar<br> 2. Menjauhi kemaksiatan dan perbuatan yang buruk<br> 3. Membuat kita memperbanyak amal ibadah<br> 4. Membuat bersemangat mencari rezeki </p> <label><input type="radio" name="q5" value="a"> A. 1 dan 2</label><br> <label><input type="radio" name="q5" value="b"> B. 1 dan 3</label><br> <label><input type="radio" name="q5" value="c"> C. 2 dan 3</label><br> <label><input type="radio" name="q5" value="d"> D. 3 dan 4</label> <br><br> <!-- SOAL 6 --> <p><b>6. Peristiwa penimbangan amal disebut....</b></p> <label><input type="radio" name="q6" value="a"> A. yaumul Ba'as</label><br> <label><input type="radio" name="q6" value="b"> B. yaumulmizan</label><br> <label><input type="radio" name="q6" value="c"> C. yaumulhisab</label><br> <label><input type="radio" name="q6" value="d"> D. yaumulmahsyar</label> <br><br> <!-- SOAL 7 --> <p><b>7. Contoh kejadian kiamat kubra adalah nomor....</b></p> <p> 1. Gempa bumi dan tsunami Aceh<br> 2. Gunung Krakatau meletus<br> 3. Seluruh gunung meletus<br> 4. Perang dunia II<br> 5. Ditiupnya sangkakala </p> <label><input type="radio" name="q7" value="a"> A. 1 dan 4</label><br> <label><input type="radio" name="q7" value="b"> B. 2 dan 3</label><br> <label><input type="radio" name="q7" value="c"> C. 3 dan 5</label><br> <label><input type="radio" name="q7" value="d"> D. 4 dan 5</label> <br><br> <!-- SOAL 8 --> <p><b>8. Hari diperlihatkannya seluruh amal disebut....</b></p> <label><input type="radio" name="q8" value="a"> A. Yaumulhisab</label><br> <label><input type="radio" name="q8" value="b"> B. Yaumuljaza</label><br> <label><input type="radio" name="q8" value="c"> C. yaumulmahsyar</label><br> <label><input type="radio" name="q8" value="d"> D. yaumul Ba'as</label> <br><br> <!-- SOAL 9 --> <p> <b>9. Pasangan yang tepat antara hari akhir dan artinya adalah....</b> </p> <table style=" width:100%; border-collapse:collapse; margin-top:10px; margin-bottom:15px; "> <tr style="background:#4facfe; color:white;"> <th style="border:1px solid #ccc; padding:8px;">No</th> <th style="border:1px solid #ccc; padding:8px;"> Hari akhir </th> <th style="border:1px solid #ccc; padding:8px;">No</th> <th style="border:1px solid #ccc; padding:8px;"> Artinya </th> </tr> <tr> <td style="border:1px solid #ccc; padding:8px;">1</td> <td style="border:1px solid #ccc; padding:8px;">yaumul ba'as</td> <td style="border:1px solid #ccc; padding:8px;">a</td> <td style="border:1px solid #ccc; padding:8px;">hari kebangkitan</td> </tr> <tr> <td style="border:1px solid #ccc; padding:8px;">2</td> <td style="border:1px solid #ccc; padding:8px;">yaumulmahsyar</td> <td style="border:1px solid #ccc; padding:8px;">b</td> <td style="border:1px solid #ccc; padding:8px;">hari pembalasan</td> </tr> <tr> <td style="border:1px solid #ccc; padding:8px;">3</td> <td style="border:1px solid #ccc; padding:8px;">Yaumulhisab</td> <td style="border:1px solid #ccc; padding:8px;">c</td> <td style="border:1px solid #ccc; padding:8px;">hari penimbangan</td> </tr> <tr> <td style="border:1px solid #ccc; padding:8px;">4</td> <td style="border:1px solid #ccc; padding:8px;">yaumulmizan</td> <td style="border:1px solid #ccc; padding:8px;">d</td> <td style="border:1px solid #ccc; padding:8px;">hari perhitungan</td> </tr> <tr> <td style="border:1px solid #ccc; padding:8px;">5</td> <td style="border:1px solid #ccc; padding:8px;">Yaumuljaza</td> <td style="border:1px solid #ccc; padding:8px;">e</td> <td style="border:1px solid #ccc; padding:8px;">hari berkumpul</td> </tr> </table> <label> <input type="radio" name="q9" value="a"> A. (1 dan a), (2 dan e), (3 dan d), (4 dan b), (5 dan c) </label> <br> <label> <input type="radio" name="q9" value="b"> B. (1 dan a), (2 dan e), (3 dan c), (4 dan b), (5 dan d) </label> <br> <label> <input type="radio" name="q9" value="c"> C. (1 dan b), (2 dan e), (3 dan a), (4 dan c), (5 dan d) </label> <br> <label> <input type="radio" name="q9" value="d"> D. (1 dan a), (2 dan e), (3 dan d), (4 dan c), (5 dan b) </label> <!-- SOAL 10 --> <p><b>10. Tanda-tanda kiamat kubra ditunjukkan pada nomor....</b></p> <p> 1. rusaknya ka'bah<br> 2. pembunuhan merajalela<br> 3. matahari terbit dari arah barat<br> 4. banyak terjadi gempa bumi </p> <label><input type="radio" name="q10" value="a"> A. 1 dan 2</label><br> <label><input type="radio" name="q10" value="b"> B. 1 dan 3</label><br> <label><input type="radio" name="q10" value="c"> C. 2 dan 4</label><br> <label><input type="radio" name="q10" value="d"> D. 3 dan 4</label> <br><br> <button type="button" class="btn btn1" onclick="cekNilai7()"> ✅ Lihat Nilai </button> <button type="button" class="btn btn4" onclick="ulangiLatihan7()"> 🔄 Ulangi Latihan </button> <button type="button" class="btn btn3" onclick="tutupLatihan7()"> ❌ Tutup </button> </form> <h3 id="hasilNilai7" style="margin-top:20px; color:#2196f3;"> </h3> </div>
+
+</div>
+
+</div>
+
+<!-- BAB 8 -->
+
+<div class="card">
+
+<div class="left">
+
+<div class="icon b8">
+<i class="fa-solid fa-earth-asia"></i>
+</div>
+
+<div class="text">
+<h2>Bab 8</h2>
+<p>Indahnya Persaudaraan</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="btn btn1"
+onclick="tampilRingkasan8()">
+📖 Ringkasan Materi
+</button>
+
+<div id="ringkasan8"
+style="
+display:none;
+margin-top:15px;
+background:white;
+padding:20px;
+border-radius:15px;
+line-height:1.8;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+max-width:900px;
+">
+
+<h2>🤝 Rangkuman Materi Bab 8</h2>
+
+<p>
+Ukhuwah wathaniyah adalah persaudaraan sesama warga yang tinggal di negara yang sama walaupun tidak seagama atau berbeda suku.
+Sebagai warga negara Indonesia, kita harus hidup rukun, damai, dan saling menghormati.
+</p>
+
+<p>
+Berteman baik dengan orang yang berbeda agama adalah anjuran Rasulullah saw.
+Islam mengajarkan agar manusia hidup saling menghargai dan tidak saling bermusuhan.
+</p>
+
+<h3>✨ Sikap Berteman yang Baik</h3>
+
+<p>
+Beberapa contoh sikap berteman yang baik antara lain:
+</p>
+
+<ul style="margin-left:25px;">
+<li>Tidak membedakan teman karena agama atau suku</li>
+<li>Saling tolong-menolong</li>
+<li>Saling menghormati dan menghargai</li>
+<li>Tidak mengejek teman</li>
+<li>Tidak memaksakan agama kepada orang lain</li>
+<li>Berbicara dengan sopan dan santun</li>
+</ul>
+
+<h3>🌸 Akhlak Mulia dalam Pergaulan</h3>
+
+<p>
+Akhlak yang baik dalam bergaul akan membuat orang lain menyukai pribadi kita.
+Orang yang ramah, jujur, suka membantu, dan rendah hati akan memiliki banyak teman.
+</p>
+
+<p>
+Sebaliknya, orang yang suka mengejek, sombong, dan menyakiti teman akan dijauhi oleh orang lain.
+</p>
+
+<h3>💡 Hikmah Berteman Tanpa Membedakan Agama</h3>
+
+<ul style="margin-left:25px;">
+<li>Menghindari perpecahan</li>
+<li>Mempererat tali persaudaraan</li>
+<li>Mempertebal keimanan</li>
+<li>Dicintai banyak orang</li>
+<li>Menjadikan pribadi yang rendah hati</li>
+<li>Menciptakan lingkungan yang damai dan nyaman</li>
+</ul>
+
+<h3>🌈 Contoh Sikap dalam Kehidupan Sehari-hari</h3>
+
+<ul style="margin-left:25px;">
+<li>Membantu teman yang kesulitan belajar</li>
+<li>Bermain bersama tanpa memilih-milih teman</li>
+<li>Mengucapkan salam dan berbicara sopan</li>
+<li>Tidak bertengkar karena perbedaan</li>
+<li>Menjaga kerukunan di sekolah dan lingkungan rumah</li>
+</ul>
+
+<br>
+
+<button class="btn btn3"
+onclick="tutupRingkasan8()">
+❌ Tutup Ringkasan
+</button>
+
+</div>
+
+<button class="btn btn2"
+onclick="lihatPDF('bab8.pdf')">
+📄 Materi
+</button>
+
+<a href="https://www.youtube.com/watch?v=KmtTkAjy2RY"
+target="_blank"
+class="btn btn3">
+🎥 YouTube
+</a>
+
+<button class="btn btn4" onclick="tampilLatihan8()"> 📝 Latihan </button> <!-- TOMBOL ULANGAN BAB 8 --> <a href="https://docs.google.com/forms/d/e/1FAIpQLScOoMazr6eX_rvdliToZ1_Jkh3E6UNm85vOaBTOGosT0A9W2w/viewform?usp=publish-editor" target="_blank" class="btn btn2"> 📋 Ulangan </a> <!-- LATIHAN BAB 8 --> <div id="latihan8" style=" display:none; margin-top:15px; background:white; padding:20px; border-radius:15px; line-height:1.8; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:900px; "> <h2>📝 Latihan Bab 8</h2> <form id="quizForm8"> <!-- SOAL 1 --> <p><b>1. Sikap seorang anak saleh terhadap teman berbeda agama adalah ....</b></p> <label><input type="radio" name="q1" value="a"> A. memusuhinya</label><br> <label><input type="radio" name="q1" value="b"> B. tidak berteman</label><br> <label><input type="radio" name="q1" value="c"> C. membiarkan saja</label><br> <label><input type="radio" name="q1" value="d"> D. berteman dengan baik</label> <br><br> <!-- SOAL 2 --> <p><b>2. Pernyataan yang benar dalam menghargai perbedaan agama adalah ....</b></p> <p> 1. Menghargai tetangga yang sedang beribadah<br> 2. Menjenguk tetangga yang berbeda agama yang sakit<br> 3. Mengajak teman berbeda agama salat Jumat<br> 4. Menolong teman yang berbeda agama<br> 5. Ikut ke gereja bersama teman </p> <label><input type="radio" name="q2" value="a"> A. 1, 2, dan 3</label><br> <label><input type="radio" name="q2" value="b"> B. 1, 2, dan 4</label><br> <label><input type="radio" name="q2" value="c"> C. 2, 3, dan 5</label><br> <label><input type="radio" name="q2" value="d"> D. 3, 4, dan 5</label> <br><br> <!-- SOAL 3 --> <p><b>3. Sikap yang ditunjukkan Andi adalah ....</b></p> <label><input type="radio" name="q3" value="a"> A. memperjelas perbedaan</label><br> <label><input type="radio" name="q3" value="b"> B. mementingkan diri sendiri</label><br> <label><input type="radio" name="q3" value="c"> C. meyakini kebenaran agama lain</label><br> <label><input type="radio" name="q3" value="d"> D. menghargai pemeluk agama lain</label> <br><br> <!-- SOAL 4 --> <p><b>4. Contoh kegiatan bersama tanpa membedakan agama adalah ....</b></p> <label><input type="radio" name="q4" value="a"> A. salat Jumat berjamaah</label><br> <label><input type="radio" name="q4" value="b"> B. mengaji bersama sebelum belajar</label><br> <label><input type="radio" name="q4" value="c"> C. mengikuti kerja bakti di lingkungan rumah</label><br> <label><input type="radio" name="q4" value="d"> D. mengikuti acara keagamaan semua agama</label> <br><br> <!-- SOAL 5 --> <p><b>5. Ukhuwah wathaniyah artinya persaudaraan karena kesamaan ....</b></p> <label><input type="radio" name="q5" value="a"> A. suku</label><br> <label><input type="radio" name="q5" value="b"> B. agama</label><br> <label><input type="radio" name="q5" value="c"> C. manusia</label><br> <label><input type="radio" name="q5" value="d"> D. negara/bangsa</label> <br><br> <!-- SOAL 6 --> <p><b>6. Cara menghormati ibadah pemeluk agama lain adalah ....</b></p> <label><input type="radio" name="q6" value="a"> A. melarang</label><br> <label><input type="radio" name="q6" value="b"> B. mengganggu</label><br> <label><input type="radio" name="q6" value="c"> C. membiarkan</label><br> <label><input type="radio" name="q6" value="d"> D. membenarkan</label> <br><br> <!-- SOAL 7 --> <p><b>7. Di sebelah kampung Ghozali yang mayoritas penduduknya beragama non muslim bermaksud membangun jembatan. Panitia pembangunan jembatan datang ke rumah Ghozali untuk meminta sumbangan. Ghozali memiliki uang tabungan tetapi sudah diniatkan untuk membeli seragam sekolah baru. Sikap terbaik Ghozali adalah ....</b></p> <label><input type="radio" name="q7" value="a"> A. mengacuhkannya</label><br> <label><input type="radio" name="q7" value="b"> B. membantu sebisanya</label><br> <label><input type="radio" name="q7" value="c"> C. menolak karena bukan daerahnya</label><br> <label><input type="radio" name="q7" value="d"> D. meminta maaf dan tidak membantu</label> <br><br> <!-- SOAL 8 --> <p><b>8. Sikap saling menghargai dapat menciptakan ....</b></p> <label><input type="radio" name="q8" value="a"> A. perbedaan</label><br> <label><input type="radio" name="q8" value="b"> B. persamaan</label><br> <label><input type="radio" name="q8" value="c"> C. perdamaian</label><br> <label><input type="radio" name="q8" value="d"> D. pertentangan</label> <br><br> <!-- SOAL 9 --> <p><b>9. Kemarin ada tetangga Fauzan yang beragama Kristen Protestan meninggal dunia. Hari ini tepat hari kelahiran Fauzan, dan dia berniat mengadakan syukuran dengan mengundang teman kelasnya makan bersama. Sikap terbaik yang dilakukan Fauzan adalah ....</b></p> <label><input type="radio" name="q9" value="a"> A. memindahkan acara syukurannya di hari lain</label><br> <label><input type="radio" name="q9" value="b"> B. mengomel dalam hati karena batal syukuran</label><br> <label><input type="radio" name="q9" value="c"> C. tetap melaksanakan syukuran tanpa peduli tetangga</label><br> <label><input type="radio" name="q9" value="d"> D. membatalkan syukuran dan menyumbangkan uangnya</label> <br><br> <!-- SOAL 10 --> <p><b>10. Keuntungan berteman tanpa membedakan agama adalah, kecuali ....</b></p> <label><input type="radio" name="q10" value="a"> A. dicintai banyak orang</label><br> <label><input type="radio" name="q10" value="b"> B. mempertebal keimanan</label><br> <label><input type="radio" name="q10" value="c"> C. mudah menjalankan agama</label><br> <label><input type="radio" name="q10" value="d"> D. mempererat tali persaudaraan</label> <br><br> <button type="button" class="btn btn1" onclick="cekNilai8()"> ✅ Lihat Nilai </button> <button type="button" class="btn btn4" onclick="ulangiLatihan8()"> 🔄 Ulangi Latihan </button> <button type="button" class="btn btn3" onclick="tutupLatihan8()"> ❌ Tutup </button> </form> <h3 id="hasilNilai8" style="margin-top:20px; color:#2196f3;"> </h3> </div>
+
+</div>
+
+</div>
+
+<!-- BAB 9 -->
+
+<div class="card">
+
+<div class="left">
+
+<div class="icon b9">
+<i class="fa-solid fa-kaaba"></i>
+</div>
+
+<div class="text">
+<h2>Bab 9</h2>
+<p>Haji dan Kurban</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="btn btn1"
+onclick="tampilRingkasan9()">
+📖 Ringkasan Materi
+</button>
+
+<div id="ringkasan9"
+style="
+display:none;
+margin-top:15px;
+background:white;
+padding:20px;
+border-radius:15px;
+line-height:1.8;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+max-width:900px;
+">
+
+<h2>🕋 Rangkuman Materi Bab 9</h2>
+
+<p>
+Melaksanakan ibadah haji berarti datang menziarahi Kakbah di Kota Makkah dan melakukan serangkaian ibadah sesuai ketentuannya.
+Ibadah haji merupakan rukun Islam yang kelima.
+</p>
+
+<p>
+Ibadah haji wajib dilakukan oleh umat Islam yang mampu, minimal satu kali seumur hidup.
+</p>
+
+<h3>✨ Syarat Wajib Haji</h3>
+
+<p>
+Yang termasuk syarat wajib haji adalah:
+</p>
+
+<ul style="margin-left:25px;">
+<li>Islam</li>
+<li>Balig</li>
+<li>Berakal</li>
+<li>Mampu atau memiliki biaya</li>
+</ul>
+
+<p>
+Mampu tidak hanya memiliki biaya perjalanan, tetapi juga sehat jasmani dan rohani.
+</p>
+
+<h3>🌟 Rukun Haji</h3>
+
+<p>
+Rukun haji adalah amalan yang harus dilakukan dalam ibadah haji dan tidak boleh ditinggalkan.
+</p>
+
+<ul style="margin-left:25px;">
+<li>Ihram</li>
+<li>Wukuf di Arafah</li>
+<li>Tawaf Ifadah</li>
+<li>Sa’i</li>
+<li>Tahalul</li>
+<li>Tertib</li>
+</ul>
+
+<h3>📖 Wajib Haji</h3>
+
+<p>
+Yang termasuk wajib haji yaitu:
+</p>
+
+<ul style="margin-left:25px;">
+<li>Berihram dari miqat</li>
+<li>Mabit di Muzdalifah tanggal 9 Zulhijah</li>
+<li>Melontar Jamrah Aqabah</li>
+<li>Mabit di Mina</li>
+<li>Melontar jamrah ula, wusta, dan aqabah pada hari Tasyrik</li>
+<li>Tawaf wada</li>
+<li>Meninggalkan larangan saat ihram</li>
+</ul>
+
+<h3>🚫 Larangan Saat Ihram</h3>
+
+<p>
+Ketika ihram, jamaah haji tidak boleh melakukan beberapa hal berikut:
+</p>
+
+<ul style="margin-left:25px;">
+<li>Memakai wangi-wangian</li>
+<li>Memotong kuku</li>
+<li>Mencukur rambut</li>
+<li>Bertengkar atau berkata kasar</li>
+<li>Membunuh hewan</li>
+</ul>
+
+<h3>💡 Hikmah Ibadah Haji</h3>
+
+<p>
+Pelaksanaan ibadah haji mengandung banyak hikmah besar dalam kehidupan seorang muslim.
+Ibadah haji memberikan kemaslahatan bagi seluruh umat Islam di seluruh dunia.
+</p>
+
+<ul style="margin-left:25px;">
+<li>Mempererat persaudaraan sesama muslim</li>
+<li>Melatih kesabaran dan kedisiplinan</li>
+<li>Meningkatkan ketakwaan kepada Allah Swt.</li>
+<li>Menyadarkan bahwa semua manusia sama di hadapan Allah</li>
+<li>Melatih hidup sederhana</li>
+</ul>
+
+<h2>🐄 Materi Kurban</h2>
+
+<p>
+Kurban adalah ibadah menyembelih hewan ternak dengan tujuan mendekatkan diri kepada Allah Swt.
+Ibadah kurban dilakukan pada Hari Raya Iduladha dan hari Tasyrik.
+</p>
+
+<h3>✨ Hukum Kurban</h3>
+
+<p>
+Hukum melaksanakan kurban adalah sunah muakadah.
+Sunah muakadah artinya ibadah yang sangat dianjurkan dan hampir mendekati wajib.
+</p>
+
+<h3>🌸 Syarat Orang yang Berkurban</h3>
+
+<ul style="margin-left:25px;">
+<li>Islam</li>
+<li>Berakal</li>
+<li>Balig</li>
+<li>Mampu</li>
+</ul>
+
+<h3>🐐 Syarat Hewan Kurban</h3>
+
+<ul style="margin-left:25px;">
+<li>Termasuk hewan ternak</li>
+<li>Sudah cukup umur</li>
+<li>Tidak cacat</li>
+<li>Sehat dan kuat</li>
+</ul>
+
+<h3>📚 Contoh Hewan Kurban</h3>
+
+<ul style="margin-left:25px;">
+<li>Kambing</li>
+<li>Domba</li>
+<li>Sapi</li>
+<li>Kerbau</li>
+<li>Unta</li>
+</ul>
+
+<h3>🌈 Hikmah Berkurban</h3>
+
+<ul style="margin-left:25px;">
+<li>Melatih keikhlasan</li>
+<li>Belajar berbagi kepada sesama</li>
+<li>Meningkatkan rasa syukur</li>
+<li>Menolong orang yang membutuhkan</li>
+<li>Menumbuhkan rasa peduli dan kasih sayang</li>
+</ul>
+
+<h3>🤝 Sikap yang Harus Dibiasakan</h3>
+
+<ul style="margin-left:25px;">
+<li>Suka berbagi kepada teman dan tetangga</li>
+<li>Tidak sombong</li>
+<li>Rajin beribadah</li>
+<li>Ikhlas membantu orang lain</li>
+<li>Bersyukur atas nikmat Allah Swt.</li>
+</ul>
+
+<br>
+
+<button class="btn btn3"
+onclick="tutupRingkasan9()">
+❌ Tutup Ringkasan
+</button>
+
+</div>
+
+<button class="btn btn2"
+onclick="lihatPDF('bab9.pdf')">
+📄 Materi
+</button>
+
+<a href="https://www.youtube.com/watch?v=Z6o7EcAIY1c"
+target="_blank"
+class="btn btn3">
+🎥 YouTube
+</a>
+
+<button class="btn btn4" onclick="tampilLatihan9()"> 📝 Latihan </button> <!-- TOMBOL ULANGAN BAB 9 --> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEJ1FYGBd24ITS129yzoRFtgzgEqrMKl8f_8qlI5Z7xPN4mg/viewform?usp=header" target="_blank" class="btn btn2"> 📋 Ulangan </a> <!-- LATIHAN BAB 9 --> <div id="latihan9" style=" display:none; margin-top:15px; background:white; padding:20px; border-radius:15px; line-height:1.8; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:900px; "> <h2>📝 Latihan Bab 9</h2> <form id="quizForm9"> <!-- SOAL 1 --> <p><b>1. Ibadah haji dilakukan pada bulan....</b></p> <label><input type="radio" name="q1" value="a"> A. Zulkaidah</label><br> <label><input type="radio" name="q1" value="b"> B. Zulhijah</label><br> <label><input type="radio" name="q1" value="c"> C. Ramadan</label><br> <label><input type="radio" name="q1" value="d"> D. Muharam</label> <br><br> <!-- SOAL 2 --> <p><b>2. Perhatikan beberapa ketentuan berikut:</b></p> <p> 1. Islam<br> 2. balig<br> 3. berakal<br> 4. mampu </p><b>Beberapa ketentuan di atas merupakan bagian dari....</b></p> <label><input type="radio" name="q2" value="a"> A. rukun haji</label><br> <label><input type="radio" name="q2" value="b"> B. syarat wajib haji</label><br> <label><input type="radio" name="q2" value="c"> C. wajib haji</label><br> <label><input type="radio" name="q2" value="d"> D. sunah haji</label> <br><br> <!-- SOAL 3 --> <p><b>3. Tawaf ketika hendak meninggalkan Masjidil Haram disebut Tawaf....</b></p> <label><input type="radio" name="q3" value="a"> A. Qudum</label><br> <label><input type="radio" name="q3" value="b"> B. Ifadah</label><br> <label><input type="radio" name="q3" value="c"> C. Wada</label><br> <label><input type="radio" name="q3" value="d"> D. Nazar</label> <br><br> <!-- SOAL 4 --> <p><b>4. Segala sesuatu yang harus dikerjakan ketika haji dan jika ditinggal hajinya tidak sah disebut....</b></p> <label><input type="radio" name="q4" value="a"> A. syarat wajib haji</label><br> <label><input type="radio" name="q4" value="b"> B. syarat sah haji</label><br> <label><input type="radio" name="q4" value="c"> C. rukun haji</label><br> <label><input type="radio" name="q4" value="d"> D. wajib haji</label> <br><br> <!-- SOAL 5 --> <p><b>5. Ketentuan berikut termasuk bagian dari....</b></p> <p> 1. ihram<br> 2. wukuf di Arafah<br> 3. tawaf ifadlah<br> 4. sai<br> 5. tahalul<br> 6. tertib </p> <label><input type="radio" name="q5" value="a"> A. wajib haji</label><br> <label><input type="radio" name="q5" value="b"> B. syarat wajib haji</label><br> <label><input type="radio" name="q5" value="c"> C. sunnah haji</label><br> <label><input type="radio" name="q5" value="d"> D. rukun haji</label> <br><br> <!-- SOAL 6 --> <p><b>6. Ibadah kurban dilaksanakan pada....</b></p> <label><input type="radio" name="q6" value="a"> A. 10 Zulhijah</label><br> <label><input type="radio" name="q6" value="b"> B. 1 Syawal</label><br> <label><input type="radio" name="q6" value="c"> C. 10 Ramadan</label><br> <label><input type="radio" name="q6" value="d"> D. 1 Hijriah</label> <br><br> <!-- SOAL 7 --> <p><b>7. Hukum melaksanakan kurban adalah....</b></p> <label><input type="radio" name="q7" value="a"> A. sunah</label><br> <label><input type="radio" name="q7" value="b"> B. sunah muakad</label><br> <label><input type="radio" name="q7" value="c"> C. fardu</label><br> <label><input type="radio" name="q7" value="d"> D. fardu kifayah</label> <br><br> <!-- SOAL 8 --> <p><b>8. Hewan yang boleh dijadikan kurban adalah....</b></p> <p> 1. ayam<br> 2. kambing<br> 3. sapi<br> 4. unta<br> 5. kuda </p> <label><input type="radio" name="q8" value="a"> A. 1, 2, 3</label><br> <label><input type="radio" name="q8" value="b"> B. 2, 3, 4</label><br> <label><input type="radio" name="q8" value="c"> C. 2, 4, 5</label><br> <label><input type="radio" name="q8" value="d"> D. 3, 4, 5</label> <br><br> <!-- SOAL 9 --> <p><b>9. Orang yang berhak mendapatkan daging kurban adalah....</b></p> <p> 1. orang yang berkurban<br> 2. semua orang<br> 3. fakir miskin<br> 4. tetangga<br> 5. pengemis </p> <label><input type="radio" name="q9" value="a"> A. 1, 2, 3</label><br> <label><input type="radio" name="q9" value="b"> B. 2, 4, 5</label><br> <label><input type="radio" name="q9" value="c"> C. 1, 3, 4</label><br> <label><input type="radio" name="q9" value="d"> D. 3, 4, 5</label> <br><br> <!-- SOAL 10 --> <p><b>10. Banyak daging kurban yang boleh diberikan kepada orang yang berkurban adalah....</b></p> <label><input type="radio" name="q10" value="a"> A. 1/2 dari daging kurban</label><br> <label><input type="radio" name="q10" value="b"> B. 1/3 dari daging kurban</label><br> <label><input type="radio" name="q10" value="c"> C. 1/4 dari daging kurban</label><br> <label><input type="radio" name="q10" value="d"> D. 1/5 dari daging kurban</label> <br><br> <button type="button" class="btn btn1" onclick="cekNilai9()"> ✅ Lihat Nilai </button> <button type="button" class="btn btn4" onclick="ulangiLatihan9()"> 🔄 Ulangi Latihan </button> <button type="button" class="btn btn3" onclick="tutupLatihan9()"> ❌ Tutup </button> </form> <h3 id="hasilNilai9" style="margin-top:20px; color:#2196f3;"> </h3> </div>
+
+</div>
+
+</div>
+
+<!-- BAB 10 -->
+
+<div class="card">
+
+<div class="left">
+
+<div class="icon b10">
+<i class="fa-solid fa-star"></i>
+</div>
+
+<div class="text">
+<h2>Bab 10</h2>
+<p>Khulafaurasyidin</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="btn btn1"
+onclick="tampilRingkasan10()">
+📖 Ringkasan Materi
+</button>
+
+<div id="ringkasan10"
+style="
+display:none;
+margin-top:15px;
+background:white;
+padding:20px;
+border-radius:15px;
+line-height:1.8;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+max-width:900px;
+">
+
+<h2>🌟 Rangkuman Materi Bab 10</h2>
+
+<p>
+Khulafaurasyidin artinya pemimpin yang diberi petunjuk oleh Allah Swt.
+Mereka adalah para sahabat Nabi Muhammad saw. yang melanjutkan kepemimpinan setelah Rasulullah wafat.
+</p>
+
+<h3>✨ Khulafaurasyidin</h3>
+
+<p>
+Keempat sahabat Nabi Muhammad saw. yang termasuk Khulafaurasyidin yaitu:
+</p>
+
+<ul style="margin-left:25px;">
+<li>Abu Bakar As-Siddiq r.a.</li>
+<li>Umar bin Khattab r.a.</li>
+<li>Utsman bin Affan r.a.</li>
+<li>Ali bin Abi Thalib r.a.</li>
+</ul>
+
+<h2>🌸 Abu Bakar As-Siddiq r.a.</h2>
+
+<p>
+Abu Bakar As-Siddiq r.a. adalah sahabat Nabi yang paling dekat, setia, dan sangat mencintai Rasulullah saw.
+Beliau termasuk orang pertama yang masuk Islam.
+</p>
+
+<p>
+Abu Bakar diberi gelar <b>As-Siddiq</b> yang artinya “orang yang membenarkan” karena selalu membenarkan perkataan Rasulullah saw.
+</p>
+
+<p>
+Beliau pernah ditunjuk Rasulullah saw. untuk memimpin salat dan membantu memutuskan perkara di tengah umat.
+</p>
+
+<h3>💡 Keteladanan Abu Bakar</h3>
+
+<ul style="margin-left:25px;">
+<li>Jujur dan terpercaya</li>
+<li>Setia kepada Rasulullah saw.</li>
+<li>Rela berkorban demi Islam</li>
+<li>Sederhana dan rendah hati</li>
+</ul>
+
+<h2>⚔ Umar bin Khattab r.a.</h2>
+
+<p>
+Nama lengkap beliau adalah Umar bin Khattab bin Nufail bin Adi bin Abdul Uzza bin Riyah bin Abdullah bin Qarth.
+Beliau terkenal sebagai pemimpin yang tegas dan pemberani.
+</p>
+
+<p>
+Rasulullah saw. memberi gelar <b>Al-Faruq</b> yang artinya pembeda antara yang benar dan yang salah.
+</p>
+
+<p>
+Pada masa kepemimpinan Umar, wilayah Islam berkembang sangat luas.
+Beliau juga terkenal sangat adil kepada rakyat.
+</p>
+
+<h3>💡 Keteladanan Umar bin Khattab</h3>
+
+<ul style="margin-left:25px;">
+<li>Tegas dalam kebenaran</li>
+<li>Berani membela Islam</li>
+<li>Adil kepada semua orang</li>
+<li>Sederhana walaupun menjadi pemimpin</li>
+</ul>
+
+<h2>💎 Utsman bin Affan r.a.</h2>
+
+<p>
+Nama lengkap beliau adalah Utsman bin Affan bin Abi al-Ash bin Umayyah bin Abdi Syams bin Abi Manaf.
+Beliau dikenal sebagai sahabat yang kaya raya dan sangat dermawan.
+</p>
+
+<p>
+Utsman bin Affan r.a. menggunakan hartanya untuk membantu perjuangan Islam.
+Beliau juga berjasa dalam menyusun mushaf Al-Qur’an agar bacaan Al-Qur’an tetap terjaga.
+</p>
+
+<p>
+Beliau mendapat julukan <b>Zunnurain</b> yang artinya pemilik dua cahaya karena menikahi dua putri Rasulullah saw.
+</p>
+
+<h3>💡 Keteladanan Utsman bin Affan</h3>
+
+<ul style="margin-left:25px;">
+<li>Suka bersedekah</li>
+<li>Pemalu dan sopan</li>
+<li>Dermawan kepada orang lain</li>
+<li>Mencintai Al-Qur’an</li>
+</ul>
+
+<h2>🕌 Ali bin Abi Thalib r.a.</h2>
+
+<p>
+Ali bin Abi Thalib r.a. lahir di Kota Makkah pada tanggal 13 Rajab tahun 599 M.
+Beliau merupakan sepupu sekaligus menantu Rasulullah saw.
+</p>
+
+<p>
+Ali terkenal sangat cerdas, pemberani, dan pandai dalam ilmu pengetahuan.
+Beliau termasuk anak pertama yang masuk Islam.
+</p>
+
+<p>
+Saat Rasulullah saw. hijrah ke Madinah, Ali dengan berani tidur di tempat tidur Rasulullah saw. untuk mengelabui kaum Quraisy.
+</p>
+
+<h3>💡 Keteladanan Ali bin Abi Thalib</h3>
+
+<ul style="margin-left:25px;">
+<li>Berani membela kebenaran</li>
+<li>Cerdas dan rajin belajar</li>
+<li>Sabar dan bijaksana</li>
+<li>Setia kepada Rasulullah saw.</li>
+</ul>
+
+<h2>🌈 Sikap Teladan Khulafaurasyidin</h2>
+
+<p>
+Keteladanan yang harus kita tiru dari Khulafaurasyidin yaitu:
+</p>
+
+<ul style="margin-left:25px;">
+<li>Tegas dan berani dalam kebenaran</li>
+<li>Bertanggung jawab</li>
+<li>Adil dan bijaksana dalam mengambil keputusan</li>
+<li>Bermusyawarah dalam menyelesaikan masalah</li>
+<li>Ikhlas dalam berdakwah</li>
+<li>Rajin membantu orang lain</li>
+<li>Mencintai ilmu pengetahuan</li>
+</ul>
+
+<h2>📚 Contoh Sikap dalam Kehidupan Sehari-hari</h2>
+
+<ul style="margin-left:25px;">
+<li>Berani berkata jujur</li>
+<li>Mau membantu teman yang kesulitan</li>
+<li>Tidak pilih kasih terhadap teman</li>
+<li>Rajin belajar dan membaca Al-Qur’an</li>
+<li>Menyelesaikan masalah dengan musyawarah</li>
+</ul>
+
+<br>
+
+<button class="btn btn3"
+onclick="tutupRingkasan10()">
+❌ Tutup Ringkasan
+</button>
+
+</div>
+
+<button class="btn btn2"
+onclick="lihatPDF('bab10.pdf')">
+📄 Materi
+</button>
+
+<a href="https://www.youtube.com/watch?v=Zr-M1OI7iFQ"
+target="_blank"
+class="btn btn3">
+🎥 YouTube
+</a>
+
+<button class="btn btn4" onclick="tampilLatihan10()"> 📝 Latihan </button> <!-- TOMBOL ULANGAN BAB 10 --> <a href="https://docs.google.com/forms/d/e/1FAIpQLScZ2Kl6iDORWI-WDsl-KKOl6xfm6vdkqm8uYUolCS4FbQ_iFg/viewform?usp=publish-editor" target="_blank" class="btn btn2"> 📋 Ulangan </a> <!-- LATIHAN BAB 10 --> <div id="latihan10" style=" display:none; margin-top:15px; background:white; padding:20px; border-radius:15px; line-height:1.8; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:900px; "> <h2>📝 Latihan Bab 10</h2> <form id="quizForm10"> <!-- SOAL 1 --> <p><b>1. Abu Bakar mendapatkan gelar Ash-Shiddiq dari....</b></p> <label><input type="radio" name="q1" value="a"> A. Rasulullah saw.</label><br> <label><input type="radio" name="q1" value="b"> B. Allah Swt.</label><br> <label><input type="radio" name="q1" value="c"> C. Sahabat</label><br> <label><input type="radio" name="q1" value="d"> D. Penduduk Quraisy</label> <br><br> <!-- SOAL 2 --> <p><b>2. Yang termasuk Khulafaurasyidin adalah nomor....</b></p> <p> (1) Ali bin Abi Thalib r.a.<br> (2) Umar bin Khattab r.a.<br> (3) Bilal bin Rabah r.a.<br> (4) Abu Bakar as-Siddiq r.a.<br> (5) Umar bin Abdul Aziz r.a. </p> <label><input type="radio" name="q2" value="a"> A. (1), (2), dan (3)</label><br> <label><input type="radio" name="q2" value="b"> B. (2), (3), dan (4)</label><br> <label><input type="radio" name="q2" value="c"> C. (1), (2), dan (4)</label><br> <label><input type="radio" name="q2" value="d"> D. (3), (4), dan (5)</label> <br><br> <!-- SOAL 3 --> <p><b>3. Sikap yang menonjol dari Umar bin Khattab r.a. adalah....</b></p> <label><input type="radio" name="q3" value="a"> A. pemberani</label><br> <label><input type="radio" name="q3" value="b"> B. rela berkorban</label><br> <label><input type="radio" name="q3" value="c"> C. percaya diri</label><br> <label><input type="radio" name="q3" value="d"> D. sombong</label> <br><br> <!-- SOAL 4 --> <p><b>4. Kisah sahabat Abu Bakar r.a. ditunjukkan nomor....</b></p> <p> 1. Kaya raya dan sangat dermawan<br> 2. Sepupu dan menantu Rasulullah saw.<br> 3. Berani dan tegas dalam membela Islam<br> 4. Sahabat paling dekat Rasulullah saw.<br> 5. Menemani Rasulullah hijrah ke Madinah </p> <label><input type="radio" name="q4" value="a"> A. 1 dan 3</label><br> <label><input type="radio" name="q4" value="b"> B. 1 dan 4</label><br> <label><input type="radio" name="q4" value="c"> C. 3 dan 5</label><br> <label><input type="radio" name="q4" value="d"> D. 4 dan 5</label> <br><br> <!-- SOAL 5 --> <p><b>5. Sahabat nabi yang terkenal dermawan adalah....</b></p> <label><input type="radio" name="q5" value="a"> A. Umar bin Khattab r.a.</label><br> <label><input type="radio" name="q5" value="b"> B. Usman bin Affan r.a.</label><br> <label><input type="radio" name="q5" value="c"> C. Ali bin Abi Thalib r.a.</label><br> <label><input type="radio" name="q5" value="d"> D. Abu Bakar As-Siddiq r.a.</label> <br><br> <!-- SOAL 6 --> <p><b>6. Sahabat nabi yang dapat diteladani keberaniannya adalah....</b></p> <label><input type="radio" name="q6" value="a"> A. Umar bin Khattab r.a.</label><br> <label><input type="radio" name="q6" value="b"> B. Abu Bakar As-Siddiq r.a.</label><br> <label><input type="radio" name="q6" value="c"> C. Ali bin Abi Thalib r.a.</label><br> <label><input type="radio" name="q6" value="d"> D. Usman bin Affan r.a.</label> <br><br> <!-- SOAL 7 --> <p><b>7. Abu Bakar diberi gelar Ash-Shiddiq karena....</b></p> <label><input type="radio" name="q7" value="a"> A. orang yang paling dekat dengan Rasulullah saw.</label><br> <label><input type="radio" name="q7" value="b"> B. orang paling dermawan</label><br> <label><input type="radio" name="q7" value="c"> C. orang pertama yang beriman</label><br> <label><input type="radio" name="q7" value="d"> D. selalu membenarkan perkataan Rasulullah saw.</label> <br><br> <!-- SOAL 8 --> <p><b>8. Umar bin Khattab diberi gelar....</b></p> <label><input type="radio" name="q8" value="a"> A. al-Furqan</label><br> <label><input type="radio" name="q8" value="b"> B. al-Farruq</label><br> <label><input type="radio" name="q8" value="c"> C. Saefullah</label><br> <label><input type="radio" name="q8" value="d"> D. Dzunnurain</label> <br><br> <!-- SOAL 9 --> <p><b>9. Keberanian Ali bin Abi Thalib menjelang hijrah Nabi adalah....</b></p> <label><input type="radio" name="q9" value="a"> A. berhijrah sendirian</label><br> <label><input type="radio" name="q9" value="b"> B. masuk Islam saat anak-anak</label><br> <label><input type="radio" name="q9" value="c"> C. menikahi Fatimah</label><br> <label><input type="radio" name="q9" value="d"> D. tidur menggantikan Rasulullah saw.</label> <br><br> <!-- SOAL 10 --> <p><b>10. Keteladanan Usman bin Affan yang membuktikan kecintaannya kepada Islam adalah....</b></p> <label><input type="radio" name="q10" value="a"> A. menjadi khalifah setelah Umar wafat</label><br> <label><input type="radio" name="q10" value="b"> B. selalu membenarkan perkataan Rasulullah saw.</label><br> <label><input type="radio" name="q10" value="c"> C. berhijrah meninggalkan harta dan keluarga</label><br> <label><input type="radio" name="q10" value="d"> D. pengusaha sukses dan sahabat Rasulullah saw.</label> <br><br> <button type="button" class="btn btn1" onclick="cekNilai10()"> ✅ Lihat Nilai </button> <button type="button" class="btn btn4" onclick="ulangiLatihan10()"> 🔄 Ulangi Latihan </button> <button type="button" class="btn btn3" onclick="tutupLatihan10()"> ❌ Tutup </button> </form> <h3 id="hasilNilai10" style="margin-top:20px; color:#2196f3;"> </h3> </div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- VIEW PDF -->
+
+<div id="viewer"
+style="display:none; position:fixed; top:0; left:0;
+width:100%; height:100%; background:white; z-index:999;">
+
+<button
+onclick="tutupPDF()"
+style="
+position:absolute;
+top:10px;
+left:10px;
+padding:10px 20px;
+border:none;
+background:red;
+color:white;
+border-radius:10px;
+z-index:1000;">
+❌ Tutup
+</button>
+
+<iframe id="pdfFrame"
+style="width:100%; height:100%; border:none;">
+</iframe>
+
+</div>
+
+<div class="footer">
+✨ Media Pembelajaran PAIBP ✨
+</div>
+
+<script>
+
+function lihatPDF(file){
+document.getElementById("viewer").style.display="block";
+document.getElementById("pdfFrame").src=file;
+}
+
+function tutupPDF(){
+document.getElementById("viewer").style.display="none";
+}
+
+</script>
+
+<script>
+
+function tampilRingkasan(){
+
+let x = document.getElementById("ringkasan");
+
+if(x.style.display === "none"){
+x.style.display = "block";
+}else{
+x.style.display = "none";
+}
+
+}
+
+</script>
+
+<script>
+
+function tutupRingkasan(){
+
+document.getElementById("ringkasan")
+.style.display = "none";
+
+}
+
+</script>
+
+<script>
+
+function tampilRingkasan7(){
+
+let x = document.getElementById("ringkasan7");
+
+if(x.style.display === "none"){
+x.style.display = "block";
+}else{
+x.style.display = "none";
+}
+
+}
+
+function tutupRingkasan7(){
+
+document.getElementById("ringkasan7")
+.style.display = "none";
+
+}
+
+</script>
+
+<script>
+
+function tampilRingkasan8(){
+
+let x = document.getElementById("ringkasan8");
+
+if(x.style.display === "none"){
+x.style.display = "block";
+}else{
+x.style.display = "none";
+}
+
+}
+
+function tutupRingkasan8(){
+document.getElementById("ringkasan8").style.display = "none";
+}
+
+</script>
+
+<script>
+
+function tampilRingkasan9(){
+
+let x = document.getElementById("ringkasan9");
+
+if(x.style.display === "none"){
+x.style.display = "block";
+}else{
+x.style.display = "none";
+}
+
+}
+
+function tutupRingkasan9(){
+document.getElementById("ringkasan9").style.display = "none";
+}
+
+</script>
+
+<script>
+
+function tampilRingkasan10(){
+
+let x = document.getElementById("ringkasan10");
+
+if(x.style.display === "none"){
+x.style.display = "block";
+}else{
+x.style.display = "none";
+}
+
+}
+
+function tutupRingkasan10(){
+document.getElementById("ringkasan10").style.display = "none";
+}
+
+</script>
+
+<script> function tampilLatihan(){ let x = document.getElementById("latihan6"); if(x.style.display === "none"){ x.style.display = "block"; }else{ x.style.display = "none"; } } function tutupLatihan(){ document.getElementById("latihan6").style.display = "none"; } function cekNilai(){ let nilai = 0; let jawaban = { q1:"d", q2:"a", q3:"d", q4:"d", q5:"b", q6:"b", q7:"a", q8:"a", q9:"d", q10:"b" }; for(let key in jawaban){ let pilihan = document.querySelector('input[name="'+key+'"]:checked'); if(pilihan && pilihan.value === jawaban[key]){ nilai += 10; } } document.getElementById("hasilNilai").innerHTML = "🎉 Nilai Kamu : " + nilai + " / 100"; } function ulangiLatihan(){ document.getElementById("quizForm").reset(); document.getElementById("hasilNilai").innerHTML = ""; } </script>
+
+<script> function tampilLatihan7(){ let x = document.getElementById("latihan7"); if(x.style.display === "none"){ x.style.display = "block"; }else{ x.style.display = "none"; } } function tutupLatihan7(){ document.getElementById("latihan7").style.display = "none"; } function cekNilai7(){ let nilai = 0; let jawaban = { q1:"b", q2:"b", q3:"d", q4:"d", q5:"c", q6:"b", q7:"c", q8:"a", q9:"d", q10:"b" }; for(let key in jawaban){ let pilihan = document.querySelector('input[name="'+key+'"]:checked'); if(pilihan && pilihan.value === jawaban[key]){ nilai += 10; } } document.getElementById("hasilNilai7").innerHTML = "🎉 Nilai Kamu : " + nilai + " / 100"; } function ulangiLatihan7(){ document.getElementById("quizForm7").reset(); document.getElementById("hasilNilai7").innerHTML = ""; } </script>
+
+<script> function tampilLatihan8(){ let x = document.getElementById("latihan8"); if(x.style.display === "none"){ x.style.display = "block"; }else{ x.style.display = "none"; } } function tutupLatihan8(){ document.getElementById("latihan8").style.display = "none"; } function cekNilai8(){ let nilai = 0; let jawaban = { q1:"d", q2:"b", q3:"d", q4:"c", q5:"d", q6:"c", q7:"b", q8:"c", q9:"a", q10:"c" }; for(let key in jawaban){ let pilihan = document.querySelector('input[name="'+key+'"]:checked'); if(pilihan && pilihan.value === jawaban[key]){ nilai += 10; } } document.getElementById("hasilNilai8").innerHTML = "🎉 Nilai Kamu : " + nilai + " / 100"; } function ulangiLatihan8(){ document.getElementById("quizForm8").reset(); document.getElementById("hasilNilai8").innerHTML = ""; } </script>
+
+<script> function tampilLatihan9(){ let x = document.getElementById("latihan9"); if(x.style.display === "none"){ x.style.display = "block"; }else{ x.style.display = "none"; } } function tutupLatihan9(){ document.getElementById("latihan9").style.display = "none"; } function cekNilai9(){ let nilai = 0; let jawaban = { q1:"b", q2:"b", q3:"c", q4:"c", q5:"d", q6:"a", q7:"b", q8:"b", q9:"c", q10:"b" }; for(let key in jawaban){ let pilihan = document.querySelector('input[name="'+key+'"]:checked'); if(pilihan && pilihan.value === jawaban[key]){ nilai += 10; } } document.getElementById("hasilNilai9").innerHTML = "🎉 Nilai Kamu : " + nilai + " / 100"; } function ulangiLatihan9(){ document.getElementById("quizForm9").reset(); document.getElementById("hasilNilai9").innerHTML = ""; } </script>
+
+<script> function tampilLatihan10(){ let x = document.getElementById("latihan10"); if(x.style.display === "none"){ x.style.display = "block"; }else{ x.style.display = "none"; } } function tutupLatihan10(){ document.getElementById("latihan10").style.display = "none"; } function cekNilai10(){ let nilai = 0; let jawaban = { q1:"a", q2:"c", q3:"a", q4:"d", q5:"b", q6:"a", q7:"d", q8:"b", q9:"d", q10:"d" }; for(let key in jawaban){ let pilihan = document.querySelector('input[name="'+key+'"]:checked'); if(pilihan && pilihan.value === jawaban[key]){ nilai += 10; } } document.getElementById("hasilNilai10").innerHTML = "🎉 Nilai Kamu : " + nilai + " / 100"; } function ulangiLatihan10(){ document.getElementById("quizForm10").reset(); document.getElementById("hasilNilai10").innerHTML = ""; } </script>
+
+</body>
+</html>
